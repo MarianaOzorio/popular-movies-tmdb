@@ -9,18 +9,28 @@ export const Header = styled.header`
     flex-direction: row;
     align-items: center;
     padding: 1rem 3rem;
+
     h1 {
         font-size: 3rem;
         margin-right: 2rem;        
     }
+
     p {
         font-size: 1.5rem;
     }
+
     @media screen and (max-width: 780px) {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+
+        h1 {
+            margin: 0;        
+        }
+
         p {
             font-size: 1.2rem;
             line-height: 100%;
-            text-align: right;
         }
     }
 `
@@ -38,21 +48,25 @@ export const MovieCard = styled.li`
     flex-direction: column;
     text-align: center;
     margin: 1rem;
+
     img {
         width: 190px;
         border-radius: 1rem;
         margin-bottom: 1rem;
         transition: all 0.3s;
     }
+
     img:hover {
         transform: scale(1.1);
     }
+
     a {
         font-weight: bold;
         font-size: 1.3rem;
         color: #FFF;
         text-decoration: none;
     }
+
     a:hover {
         color: #AE8CFA;
     } 
